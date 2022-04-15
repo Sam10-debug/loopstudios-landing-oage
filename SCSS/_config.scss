@@ -10,12 +10,25 @@
         fill: cyan;
     }
 }
+@mixin any() {
+    margin: 0 0.8rem;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
 %lol{
     margin: 1rem 0;
+}
+%lols{
+    margin: 0.5rem;
 }
 %btn{
     text-decoration: underline;
     cursor: pointer;
+}
+#desktop>img{
+    @extend %lols
 }
 #mobile>img{
     @extend %lol;
@@ -49,4 +62,7 @@
 }
 #hidden5:hover{
     @extend %btn
+}
+.careerWrap>p{
+    @include any()
 }

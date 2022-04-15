@@ -24,6 +24,9 @@ h1{
         height: 600px;
         max-height: 600px;
         position: relative;
+        .desktopHidden{
+            display: none;
+        }
         .hidden{
             display: none;
             color: white;
@@ -104,6 +107,7 @@ h1{
     .thirdWrap{
         display: flex;
         flex-direction: column;
+        
         h1{
             text-transform: uppercase;
             text-align: center;
@@ -130,6 +134,7 @@ h1{
           text-transform: uppercase;
           font-weight: bold;
           margin-left: 40%;
+          cursor: pointer;
           &:hover{
               background-color: #000;
               color: #fff;
@@ -177,3 +182,4 @@ a{
         text-decoration: underline;
     }
 }
+@import 'mediaQuery';

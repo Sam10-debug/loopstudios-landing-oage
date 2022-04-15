@@ -1,0 +1,139 @@
+@media screen and (min-width:900px){
+    body{
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 1rem 0;
+        }
+        #mobile{
+            display: none;
+        }
+        #desktop{
+            display: block;
+        }
+        h1{
+            font-size: 3.5rem;
+        }
+        .card{
+            width: 80%;
+            .firstWrap{
+                background-image: url("../images/desktop/image-hero.jpg");
+                .desktopHidden{
+                    display: flex;
+                    color: white;
+                    text-transform: capitalize;
+                    position: absolute;
+                    right: 0%;
+                    top:4%;
+                    p{
+                        @include any()
+                    }
+                }
+                .firstSubWrap{
+                    border: 2px solid #fff;
+                }
+                .logo{
+                    width: 150px;
+                    margin: 1rem 0 0 4rem;
+                }
+                .hamburger{
+                    display: none;
+                }
+            }
+            .secondWrap{
+                flex-direction: row;
+                position: relative;
+                margin-bottom: 10rem;
+                  .thirdSubWrap{
+                      position: absolute;
+                      background-color: white;
+                      height: 350px;
+                      max-height: 350px;
+                      top: 37%;
+                      left: 60%;
+                      h1{
+                          text-transform: uppercase;
+                          font-weight: 100;
+                          text-align: center;
+                          margin: 2rem;
+                      }
+                      p{
+                          text-align: center;
+                          margin: 1rem 2rem 0 2rem;
+                      }
+                  }
+            }
+            .thirdWrap{
+                width: 100%;
+                position: relative;
+                h1{
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-weight: 100;
+                    margin-bottom: 2rem;
+                }
+                .fourthSubWrap{
+                    display: flex;
+                    flex-direction: column;
+                    #desktop{
+                        display: grid;
+                        grid-template-columns: 25% 25% 25% 25%;
+                        grid-template-rows: 1fr;
+                        grid-gap: 4rem;
+                    }
+                    img{
+                        width: 250px;
+                    }
+        
+                }
+                .fifthSubWrap{
+                   position: absolute;
+                   right: 0;
+                  &:hover{
+                      background-color: #000;
+                      color: #fff;
+                  }
+                }
+            }
+            .fourthWrap{
+               display: flex;
+                height: 300px;
+                max-height: 100px;
+                text-align: center;
+                margin-top: 3rem;
+                .sixthSubWrap{
+                    line-height: 1.5;
+                    text-align: left;
+                    margin-left: 1rem;
+                    flex: 1;
+                    .careerWrap{
+                        text-transform: capitalize;
+                        display: flex;
+                    }
+                    img{
+                        width: 120px;
+                        margin-top: 2rem;
+                    }
+                }
+                .seventhSubWrap{
+                    flex: 1;
+                    text-align: right;
+                    margin-top: 0.7rem;
+                }
+                .tooltip{
+                    margin: 1rem 0;
+                    #fb{
+                        @include name
+                    }
+                    #twitter{
+                        @include name
+                    }
+                    #pinterest{
+                        @include name
+                    }
+                    #instagram{
+                        @include name
+                    }
+                }
+            }
+        }
+}
