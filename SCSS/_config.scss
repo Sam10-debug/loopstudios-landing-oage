@@ -5,14 +5,20 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 @mixin name() {
-    margin: 0 1rem;
+    margin: 0 0.8rem;
     &:hover path{
         fill: cyan;
     }
 }
+%lol{
+    margin: 1rem 0;
+}
 %btn{
     text-decoration: underline;
     cursor: pointer;
+}
+#mobile>img{
+    @extend %lol;
 }
 #about:hover{
     @extend %btn
