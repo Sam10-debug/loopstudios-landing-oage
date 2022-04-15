@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@mixin name() {
+    margin: 0 1rem;
+    &:hover path{
+        fill: cyan;
+    }
+}
+%btn{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#about:hover{
+    @extend %btn
+}
+#career:hover{
+    @extend %btn
+}
+#events:hover{
+    @extend %btn
+}
+#products:hover{
+    @extend %btn
+}
+#support:hover{
+    @extend %btn
+}
+#hidden1:hover{
+    @extend %btn
+}
+#hidden2:hover{
+    @extend %btn
+}
+#hidden3:hover{
+    @extend %btn
+}
+#hidden4:hover{
+    @extend %btn
+}
+#hidden5:hover{
+    @extend %btn
+}
